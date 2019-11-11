@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical">
+
+    <com.trioangle.goferdriver.custompalette.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/signout_msg"
+        android:textColor="@color/textblack"
+        android:textSize="16dp"
+        app:fontname="@string/font_UBERMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_topbordor"
+        android:divider="@drawable/divider"
+        android:orientation="horizontal"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:id="@+id/signout_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/cancel_s"
+            android:textAlignment="center"
+            android:textColor="@color/textblack"
+            android:textSize="14dp"
+            app:fontname="@string/font_UBERNews" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:id="@+id/signout_signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/signout"
+            android:textAlignment="center"
+            android:textColor="@color/textblack"
+            android:textSize="14dp"
+            app:fontname="@string/font_UBERNews" />
+    </LinearLayout>
+
+</LinearLayout>

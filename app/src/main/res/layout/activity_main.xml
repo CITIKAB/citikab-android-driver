@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:keepScreenOn="true"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.goferdriver.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/homelist"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@drawable/list"
+            android:tint="@color/white"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/homelist"
+            android:background="@color/arrow_tint"
+            android:visibility="gone" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:id="@+id/txt_driverstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/homelist"
+            android:paddingStart="20dp"
+            android:text="@string/offline"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERMedium" />
+        <!--android:thumb="@drawable/n2_sheet_switch_thumb"
+            app:track="@drawable/n2_sheet_switch_track"-->
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_driverstatus"
+            style="@style/SwitchCompatStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:checked="false" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:id="@+id/txt_checkdriverstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@color/ub__red"
+            android:padding="5dp"
+            android:text="@string/checkstatus"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:fontname="@string/font_UBERMedium" />
+        <!-- <android.support.v7.widget.SwitchCompat
+             android:layout_marginEnd="20dp"
+             android:layout_alignParentEnd="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:checked="false"
+             style="@style/SwitchCompatTheme"
+             android:layout_centerVertical="true"
+             android:id="@+id/switch_driverstatus"
+             android:layout_alignParentEnd="true"/>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/iv_line"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:background="#ffffff" />
+
+
+    </RelativeLayout>
+
+
+    <!-- android:animateLayoutChanges="true"-->
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/relativeLayout2"></FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:animateLayoutChanges="false"
+        android:background="@color/app_background"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:splitMotionEvents="false"
+        app:itemIconTint="@color/nav_item_state_list"
+        app:itemTextColor="@color/nav_item_state_list"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_items" />
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_your_trips"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E9"
+    android:layoutDirection="@string/layout_direction">
+
+    <RelativeLayout
+        android:id="@+id/starcomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_lay"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#E6E6E9"
+        android:paddingStart="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/noratings" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/MyTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_lay"
+        android:background="#000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="gone"
+        app:tabIndicatorColor="@android:color/holo_blue_light" />
+
+    <!-- View pager to swipe views -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/back_lay" />
+
+
+    <RelativeLayout
+        android:id="@+id/back_lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/dochome_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            android:tint="@color/white" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/dochome_back"
+            android:text="@string/riderfeedbacktitle"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERBook" />
+    </RelativeLayout>
+</RelativeLayout>

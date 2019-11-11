@@ -1,0 +1,137 @@
+{
+  "project_info": {
+    "project_number": "239640610908",
+    "firebase_url": "https://gofer-c7ed5.firebaseio.com",
+    "project_id": "gofer-c7ed5",
+    "storage_bucket": "gofer-c7ed5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239640610908:android:175ebe788fbd6ebb",
+        "android_client_info": {
+          "package_name": "com.trioangle.gofer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239640610908-dnodksj4cjb5gt2s14me75d8poilo4tj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.gofer",
+            "certificate_hash": "92f2a7356de5550cf89e4073c24e64e999a10893"
+          }
+        },
+        {
+          "client_id": "239640610908-f40b4ja9h340vvjdibr2p6nntep2ouo5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.gofer",
+            "certificate_hash": "b6b6397ef72a8369546b27014af8c14a1da480d2"
+          }
+        },
+        {
+          "client_id": "239640610908-k5r2bp1hljpbqfgl6j6q0nivbtu9evqq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.gofer",
+            "certificate_hash": "67a38915eb1c0761d28789d7275cc1345772f012"
+          }
+        },
+        {
+          "client_id": "239640610908-lg8vb6bv9esauf5orukt2cu4ckge3ohu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.gofer",
+            "certificate_hash": "191f05ce737a1ad84e8e3a4f50541e5092773d54"
+          }
+        },
+        {
+          "client_id": "239640610908-vqaobequmafl6rm0vrhl2coueldqgmh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQANqBTOSvnp2ptlf6iIBOtDt7bWjbMfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239640610908-klqar62sgql4r9n0gt8h2p1hjq84e666.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.trioangle.gofer"
+              }
+            },
+            {
+              "client_id": "239640610908-vqaobequmafl6rm0vrhl2coueldqgmh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239640610908:android:aa571bb2f92b0c48",
+        "android_client_info": {
+          "package_name": "com.trioangle.goferdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239640610908-ni78i6lv1nc6u158ek2f6pnttba74ra8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trioangle.goferdriver",
+            "certificate_hash": "191f05ce737a1ad84e8e3a4f50541e5092773d54"
+          }
+        },
+        {
+          "client_id": "239640610908-vqaobequmafl6rm0vrhl2coueldqgmh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQANqBTOSvnp2ptlf6iIBOtDt7bWjbMfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239640610908-klqar62sgql4r9n0gt8h2p1hjq84e666.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.trioangle.gofer"
+              }
+            },
+            {
+              "client_id": "239640610908-vqaobequmafl6rm0vrhl2coueldqgmh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

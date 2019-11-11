@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_doc_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical"
+    tools:context="com.trioangle.goferdriver.signinsignup.DocHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/back_lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/dochome_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            android:tint="@color/white" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/dochome_back"
+            android:text="@string/documents"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERBook" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/continue_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/d_topbordor_gray"
+        android:padding="10dp">
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/d_background_black"
+            android:gravity="center"
+            android:text="@string/verify"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:fontname="@string/font_UBERMedium" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/back_lay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_bottombordor_gray"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:visibility="gone">
+
+                <com.trioangle.goferdriver.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/personaldoc"
+                    android:textColor="@color/textblack"
+                    android:textSize="18sp"
+                    app:fontname="@string/font_UBERBook" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/uploaddocumentstext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <com.trioangle.goferdriver.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/doc"
+                    android:textColor="@color/textblack"
+                    android:textSize="18sp"
+                    app:fontname="@string/font_UBERBook" />
+
+                <com.trioangle.goferdriver.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottombordor_gray"
+                    android:paddingBottom="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/vehicledoc_msg"
+                    android:textColor="@color/textblack"
+                    android:textSize="14sp"
+                    app:fontname="@string/font_UBERBook" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/doc_driverlicence_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_buttomboarder"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp">
+
+                <com.trioangle.goferdriver.custompalette.FontTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/driverlicense_back"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14sp"
+                    app:fontname="@string/font_UBERNews" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:src="@drawable/next"
+                    android:tint="@color/arrow_tint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/doc_driverlicence_front"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_buttomboarder"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp">
+
+                <com.trioangle.goferdriver.custompalette.FontTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/driverlicense_front"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14sp"
+                    app:fontname="@string/font_UBERNews" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:src="@drawable/next"
+                    android:tint="@color/arrow_tint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/doc_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_buttomboarder"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:src="@drawable/next"
+                    android:tint="@color/arrow_tint" />
+
+                <com.trioangle.goferdriver.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/motor_insurance"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14sp"
+                    app:fontname="@string/font_UBERNews" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/doc_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_buttomboarder"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp">
+
+                <com.trioangle.goferdriver.custompalette.FontTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/registeration"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14sp"
+                    app:fontname="@string/font_UBERNews" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:src="@drawable/next"
+                    android:tint="@color/arrow_tint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/doc_carriage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:src="@drawable/next"
+                    android:tint="@color/arrow_tint" />
+
+                <com.trioangle.goferdriver.custompalette.FontTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/contract_carriage"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14sp"
+                    app:fontname="@string/font_UBERNews" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

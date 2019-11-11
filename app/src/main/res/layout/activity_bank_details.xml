@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".payouts.BankDetailsActivity">
+    <data>
+        <variable
+            name="bankDetails"
+            type="com.trioangle.goferdriver.datamodel.BankDetailsModel" />
+
+        <variable
+            name="handlers"
+            type="com.trioangle.goferdriver.payouts.BankDetailsActivity.MyClickHandlers" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/payoutaddress_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/app_background"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_bank_backpress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{handlers::onBackClicked}"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
+                app:srcCompat="@drawable/ic_back" />
+
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:id="@+id/payoutaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/iv_bank_backpress"
+                android:text="@string/bank_details"
+                android:textAlignment="textStart"
+                android:textColor="@color/actionbar_text_color"
+                android:textSize="@dimen/midb"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrolliew"
+            android:layout_above="@+id/payout_submit"
+            android:layout_marginTop="100dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/ll_card_details_lay">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+
+                    android:layout_alignParentStart="true"
+
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1">
+
+                        <com.trioangle.goferdriver.custompalette.FontEditText
+                            android:id="@+id/edt_acc_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/account_holder_name"
+                            android:singleLine="true"
+                            android:text="@{bankDetails.account_holder_name}"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/midi"
+                            app:fontname="@string/font_UBERNews" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1">
+
+                        <com.trioangle.goferdriver.custompalette.FontEditText
+                            android:id="@+id/edt_acc_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/account_number"
+                            android:singleLine="true"
+                            android:text="@{bankDetails.account_number}"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/midi"
+                            app:fontname="@string/font_UBERNews" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1">
+
+                        <com.trioangle.goferdriver.custompalette.FontEditText
+                            android:id="@+id/edt_bank_acc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/name_of_bank"
+                            android:singleLine="true"
+                            android:text="@{bankDetails.bank_name}"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/midi"
+                            app:fontname="@string/font_UBERNews" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1">
+
+                        <com.trioangle.goferdriver.custompalette.FontEditText
+                            android:id="@+id/edt_bank_loc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/bank_location"
+                            android:singleLine="true"
+                            android:text="@{bankDetails.bank_location}"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/midi"
+                            app:fontname="@string/font_UBERNews" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1">
+
+                        <com.trioangle.goferdriver.custompalette.FontEditText
+                            android:id="@+id/edt_swift_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/bic_swift_code"
+                            android:singleLine="true"
+                            android:visibility="gone"
+                            android:text="@{bankDetails.bank_code}"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/midi"
+                            app:fontname="@string/font_UBERNews" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.trioangle.goferdriver.custompalette.FontButton
+            android:id="@+id/payout_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/d_background_black"
+            android:onClick="@{handlers::onButtonClick}"
+            android:layout_alignParentBottom="true"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rider_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical"
+    tools:context="com.trioangle.goferdriver.home.RiderContactActivity">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/insurance_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            android:tint="@color/white" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/insurance_back"
+            android:text="@string/contact_C"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERBook" />
+    </RelativeLayout>
+
+    <com.trioangle.goferdriver.custompalette.FontTextView
+        android:id="@+id/ridername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/insurance_back"
+        android:padding="20dp"
+        android:textColor="@color/textblack"
+        android:textSize="20sp"
+        app:fontname="@string/font_UBERNews" />
+
+    <com.trioangle.goferdriver.custompalette.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/insurance_back"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/callsonly"
+        android:textColor="@color/textblack"
+        android:textSize="14sp"
+        app:fontname="@string/font_UBERBook" />
+
+    <com.trioangle.goferdriver.custompalette.FontTextView
+        android:id="@+id/mobilenumbertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/insurance_back"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/textblack"
+        android:textSize="18sp"
+        app:fontname="@string/font_UBERNews" />
+
+    <LinearLayout
+        android:id="@+id/callbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/d_top_bottom_bordor_gray"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:src="@drawable/ic_phone"
+            android:tint="@color/app_continue"/>
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/insurance_back"
+            android:text="@string/call"
+            android:textColor="@color/app_continue"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERMedium" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/d_top_bottom_bordor_gray"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:src="@drawable/ic_message"
+            android:tint="@color/app_continue" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/insurance_back"
+            android:text="@string/message"
+            android:textColor="@color/app_continue"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERMedium" />
+    </LinearLayout>
+</LinearLayout>

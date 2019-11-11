@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="actionbar_text_size">20dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="vvvbig">50dp</dimen>
+    <dimen name="vvbig">40dp</dimen>
+    <dimen name="vbig1">37dp</dimen>
+    <dimen name="vbig">35dp</dimen>
+    <dimen name="vbigi">32dp</dimen>
+    <dimen name="vbigb">30dp</dimen>
+    <dimen name="bigb">27dp</dimen>
+    <dimen name="bigi">24dp</dimen>
+    <dimen name="bige">23dp</dimen>
+    <dimen name="big">21dp</dimen>
+    <dimen name="midv">20dp</dimen>
+    <dimen name="midb">18dp</dimen>
+    <dimen name="midi">16dp</dimen>
+    <dimen name="mid">15dp</dimen>
+    <dimen name="smalli">14dp</dimen>
+    <dimen name="small">13dp</dimen>
+    <dimen name="small11">11dp</dimen>
+    <dimen name="smallb">10dp</dimen>
+    <!--Calendar round size-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+</resources>

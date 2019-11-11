@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cancel_your_trip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.goferdriver.home.CancelYourTripActivity">
+
+    <RelativeLayout
+        android:id="@+id/cancel_close"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/driverlicence_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            android:tint="@color/white" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/driverlicence_back"
+            android:text="@string/cancel_your_trip"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERBook" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancel_reservation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/cancel_reservation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/d_bordor">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:entries="@array/cancel_types"
+                android:paddingBottom="10dp"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:spinnerMode="dialog" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/cancel_reason"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/cancel_reservation1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/d_bordor"
+            android:gravity="top"
+            android:hint="@string/other_reasons"
+            android:lines="5"
+            android:padding="5dp"
+            android:text="" />
+
+        <com.trioangle.goferdriver.custompalette.FontButton
+            android:id="@+id/cancelreservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel_reason"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/d_background_black"
+            android:text="@string/cancel_your_trip"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:fontname="@string/font_UBERBook" />
+
+    </RelativeLayout>
+</RelativeLayout>

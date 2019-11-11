@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment_statement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.goferdriver.paymentstatement.PaymentStatementActivity">
+
+    <RelativeLayout
+        android:id="@+id/pay_back_lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/pay_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            android:tint="@color/white" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/pay_back"
+            android:text="@string/paystatement"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERBook" />
+    </RelativeLayout>
+    <!-- <android.support.v7.widget.RecyclerView
+         android:id="@+id/paystatementlist"
+         android:scrollbars="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/paystatementlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_back_lay"
+        android:clipToPadding="false"
+        android:paddingTop="10dp" />
+</RelativeLayout>

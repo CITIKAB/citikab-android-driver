@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/addresskanji_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:background="@color/calendar_text_selected_host"
+
+    >
+
+
+    <EditText
+        android:id="@+id/addresskanji1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midi"
+        android:maxLines="1"
+        android:hint="@string/address_kanji1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/d_bottom"
+        android:textColorHint="@color/calendar_text_unselectable"
+        android:textColor="@color/text_shadow"
+        android:layout_centerVertical="true" />
+    <EditText
+        android:id="@+id/addresskanji2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midi"
+        android:maxLines="1"
+        android:hint="@string/address_kanji2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/d_bottom"
+        android:textColorHint="@color/calendar_text_unselectable"
+        android:textColor="@color/text_shadow"
+        android:layout_centerVertical="true" />
+    <EditText
+        android:id="@+id/kanjicity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midi"
+        android:maxLines="1"
+        android:hint="@string/kanji_city"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/d_bottom"
+        android:textColorHint="@color/calendar_text_unselectable"
+        android:textColor="@color/text_shadow"
+        android:layout_centerVertical="true" />
+    <EditText
+        android:id="@+id/kanjistate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midi"
+        android:maxLines="1"
+        android:hint="@string/state_province_kanji"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/d_bottom"
+        android:textColorHint="@color/calendar_text_unselectable"
+        android:textColor="@color/text_shadow"
+        android:layout_centerVertical="true" />
+    <EditText
+        android:id="@+id/kanjipostalcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midi"
+        android:maxLines="1"
+        android:hint="@string/postal_code_kanji"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/d_bottom"
+        android:textColorHint="@color/calendar_text_unselectable"
+        android:textColor="@color/text_shadow"
+        android:layout_centerVertical="true" />
+
+</LinearLayout>

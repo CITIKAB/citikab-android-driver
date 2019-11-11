@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payoutBank"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction"
+    >
+
+    <RelativeLayout
+        android:id="@+id/payoutaddress_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_background"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/payoutaddress_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/ic_back"/>
+
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:id="@+id/payoutaddress"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big"
+            android:textColor="@color/actionbar_text_color"
+            android:text="@string/payout"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/payoutaddress_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/payoutaddress_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal">
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:id="@+id/payoutaddress_msg"
+                android:layout_width="wrap_content"
+                android:layout_weight=".2"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_light_shadow"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/bank_details"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:orientation="vertical"
+                android:background="@color/text_color"
+                android:layout_below="@+id/payoutaddress_msg"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/address_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/calendar_text_selected_host"
+                    >
+
+                    <EditText
+                        android:id="@+id/payoutaddress_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:focusable="false"
+                        android:visibility="gone"
+                        android:editable="false"
+                        android:background="@drawable/d_bottom"
+                        android:hint="@string/country_hint"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/payoutaddress_currency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:background="@drawable/d_bottom"
+                        android:editable="false"
+                        android:hint="@string/currency1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+
+                    <EditText
+                        android:id="@+id/ssn_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:hint="@string/ssn"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="20dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+
+                    <EditText
+                        android:id="@+id/routing_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:hint="@string/routing_number"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="20dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/clearing_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:hint="@string/clearing_code"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="20dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/branch_name"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="gone"
+                        android:hint="@string/branch_name"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/bank_code"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="gone"
+                        android:hint="@string/bank_code"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+
+
+                    <EditText
+                        android:id="@+id/branch_code"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="gone"
+                        android:hint="@string/branch_code"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+
+                    <EditText
+                        android:id="@+id/bsb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:hint="@string/bsb"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="20dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/transit_no"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="gone"
+                        android:hint="@string/transit_number"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/institute_no"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="gone"
+                        android:hint="@string/institute_number"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+
+                    <EditText
+                        android:id="@+id/sort_code"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="gone"
+                        android:hint="@string/sort_code"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/Ac_owner_name"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="gone"
+                        android:hint="@string/account_owner_name"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/ph_no"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="gone"
+                        android:hint="@string/phone_number"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/Iban_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:hint="@string/iban_number"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="20dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/Ac_holder_name"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:hint="@string/account_holder_name"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+                    <EditText
+                        android:id="@+id/Ac_no"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="visible"
+                        android:hint="@string/account_number"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+                    <EditText
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="gone"
+                        android:editable="false"
+                        android:hint="@string/gender"
+                        android:focusable="false"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/address1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:hint="@string/address_1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+                    <EditText
+                        android:id="@+id/address2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:hint="@string/address_2"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+                    <EditText
+                        android:id="@+id/bank_name"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:visibility="visible"
+                        android:hint="@string/bank_name"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:hint="@string/bank_location"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                    <EditText
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/d_bottom"
+                        android:hint="@string/state_province"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:textColor="@color/text_shadow"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textSize="@dimen/midi" />
+                    <EditText
+                        android:id="@+id/postalcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/midi"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:hint="@string/postal_code"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/d_bottom"
+                        android:textColorHint="@color/calendar_text_unselectable"
+                        android:textColor="@color/text_shadow"
+                        android:layout_centerVertical="true" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:id="@+id/addresskana_msg"
+                android:layout_width="wrap_content"
+                android:layout_weight=".2"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_light_shadow"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:text="@string/address_kana"/>
+
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                layout="@layout/address_kana" />
+
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:id="@+id/addresskanji_msg"
+                android:layout_width="wrap_content"
+                android:layout_weight=".2"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midb"
+                android:textColor="@color/text_light_shadow"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/address_kanji"/>
+
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                layout="@layout/address_kanji" />
+
+
+            <EditText
+                android:id="@+id/legal_doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/midi"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:hint="@string/legal_document"
+                android:focusable="false"
+                android:editable="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/d_bottom"
+                android:textColorHint="@color/calendar_text_unselectable"
+                android:textColor="@color/text_shadow"
+                android:layout_centerVertical="true" />
+
+            <com.trioangle.goferdriver.custompalette.FontButton
+                android:id="@+id/payout_submit"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="@dimen/big"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_background_black"
+                android:text="@string/submit"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

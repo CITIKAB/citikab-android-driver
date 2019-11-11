@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.goferdriver.fragments.RatingFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/weeklayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_lay"
+        android:background="@color/app_background">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr">
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:id="@+id/next_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="20dp"
+                android:text="q"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:fontname="@string/font_UberClone" />
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:id="@+id/before_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="20dp"
+                android:rotation="180"
+                android:text="q"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:fontname="@string/font_UberClone" />
+
+            <TextView
+                android:id="@+id/show_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/chat_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/thisweek_empty"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/linearChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view"
+            android:layout_marginTop="0dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone"></LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_total_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:paddingBottom="20dp"
+            android:textAllCaps="true"
+            android:text="@string/total_payout"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/weekly_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@+id/endarreow"
+            android:paddingBottom="20dp"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:id="@+id/endarreow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="25dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:fontname="@string/font_UberClone" />
+
+
+        <RelativeLayout
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_total_pay"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toEndOf="@+id/linearChart"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_alignTop="@+id/value_mid"
+                android:background="@color/whitelight" />
+
+            <TextView
+                android:id="@+id/value_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+
+                android:text="1100"
+                android:textColor="#9B9A9B"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/whitelight" />
+
+            <TextView
+                android:id="@+id/value_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="1650"
+                android:textColor="#9B9A9B"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/value_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:text="550"
+                android:textColor="#9B9A9B"
+
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <view
+                android:id="@+id/bar_view"
+                class="com.trioangle.goferdriver.earning.BarView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/value_mid"
+                android:layoutDirection="@string/layout_direction"
+                android:textAlignment="textStart" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/triphistorylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottomboarderearning"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:id="@+id/historytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingTop="5dp"
+                android:text="S"
+                android:textSize="25dp"
+                app:fontname="@string/font_UberClone" />
+
+            <TextView
+                android:id="@+id/triphistorytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/historytext"
+                android:paddingStart="20dp"
+                android:text="@string/trip_payment"
+                android:textColor="#09091A"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/last_trip_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/triphistorytext"
+                android:layout_toEndOf="@+id/historytext"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/last_trip"
+                android:textColor="#212131"
+                android:textSize="16dp" />
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:text="q"
+                app:fontname="@string/font_UberClone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/paystatementlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/triphistorylayout"
+            android:background="@drawable/bottomboarderearning"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:visibility="invisible">
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:id="@+id/historytext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingTop="5dp"
+                android:text="h"
+                android:textSize="25dp"
+                app:fontname="@string/font_UberClone" />
+
+            <TextView
+                android:id="@+id/paystatementtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/historytext2"
+                android:paddingStart="20dp"
+                android:text="@string/pay_statemet"
+                android:textColor="#09091A"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/most_resent_payout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paystatementtext"
+                android:layout_toEndOf="@+id/historytext2"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="Most recent payout: "
+                android:textColor="#212131"
+                android:textSize="16dp" />
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:text="q"
+                app:fontname="@string/font_UberClone" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

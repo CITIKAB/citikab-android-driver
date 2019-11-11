@@ -1,0 +1,179 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "com.trioangle.goferdriver"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [HOCKEYAPP_APP_ID: "c7cc08ccd9f0430ca860b57b5f65edb4"]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    /*signingConfigs {
+        config {
+            keyAlias 'goferdriver'
+            keyPassword 'goferdriver'
+            storeFile file('/home/trioangle/trioangle/KeyStore/Product/gofer/goferdriver.jks')
+            storePassword 'goferdriver'
+        }
+    }*/
+
+
+    
+
+
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+        density {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+        abi {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+
+    }
+    lintOptions { checkReleaseBuilds false }
+    buildTypes {
+        release {
+            //Other parameters
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            shrinkResources true
+            // signingConfig playStoreConfig //Add your own signing config
+            //signingConfig signingConfigs.config
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+            minifyEnabled true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), "proguard-rules.pro"
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            //Other parameters
+            debuggable true
+            jniDebuggable false
+            renderscriptDebuggable false
+            //shrinkResources true
+            //signingConfig signingConfigs.config //Add your own signing config
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+            minifyEnabled true
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), "proguard-rules.pro"
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.config
+        }
+    }
+    //sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+
+    useLibrary 'org.apache.http.legacy'
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+
+}
+allprojects {
+    repositories {
+        google()
+    }
+    repositories {
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // Google map
+    //round image
+    // Circular progress
+    // Circular progress
+    // for hockey app
+    // for Volley network
+    //noinspection GradleCompatible
+    implementation 'com.facebook.android:account-kit-sdk:4.23.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.23.0'
+    implementation "com.android.support:support-v13:28.0.0"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation('com.hbb20:ccp:2.2.0', {
+        exclude group: 'com.android.support', module: 'support-v7'
+    })
+    implementation 'com.android.support:design:28.0.0'
+//    implementation 'com.google.android.gms:play-services:11.8.0'
+    implementation 'com.google.android.gms:play-services-plus:16.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.github.krtkush:LinearTimer:v2.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'net.hockeyapp.android:HockeySDK:4.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'me.zhanghai.android.materialratingbar:library:1.0.2'
+    implementation 'com.google.maps.android:android-maps-utils:0.4'
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.github.florent37:camerafragment:1.0.7'// Custom camera
+
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.5.2'//phone number lib
+
+
+    implementation 'com.google.dagger:dagger:2.9'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.9'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.jakewharton:butterknife:6.1.0'
+    implementation 'id.zelory:compressor:1.0.1'
+    /*compile 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
+    implementation 'com.android.support:exifinterface:25.3.1'*/
+
+    implementation "android.arch.work:work-runtime:1.0.0"
+}
+apply plugin: 'com.google.gms.google-services'

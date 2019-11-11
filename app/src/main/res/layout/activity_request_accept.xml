@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_request_accept"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.goferdriver.home.RequestAcceptActivity">
+
+    <RelativeLayout
+        android:id="@+id/request_accept_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/request_accept_list"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="12dp"
+            android:src="@drawable/list"
+            android:tint="@color/white"
+            android:visibility="gone" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/request_accept_list"
+            android:paddingStart="30dp"
+            android:text="@string/enroute"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:fontname="@string/font_UBERMedium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/address_details_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/request_accept_lay"
+        android:background="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="20dp">
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:id="@+id/pickup_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/view"
+            android:maxLines="4"
+            android:paddingEnd="10dp"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="@color/textblack"
+            android:textSize="20sp"
+            app:fontname="@string/font_UBERMedium" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_toStartOf="@+id/navigation"
+            android:background="@color/textgray"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="12dp"
+                android:src="@drawable/compass"
+                android:tint="@color/ub__uber_blue_120" />
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navigate"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textblack"
+                android:textSize="14sp"
+                app:fontname="@string/font_UBERMedium" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/user_details_lay1"
+        android:layout_below="@+id/address_details_lay" />
+
+    <RelativeLayout
+        android:id="@+id/cashtrip_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_details_lay"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/d_black_fillboarder"
+        android:paddingBottom="3dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="2dp">
+
+        <ImageView
+            android:id="@+id/cashimg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cash" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/cashimg"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/cash_trip"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:fontname="@string/font_UBERNews" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/user_details_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:background="@color/dim_foreground_material_dark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/user_details_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:id="@+id/ridername"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingEnd="5dp"
+                android:text=""
+                android:textColor="@color/textblack"
+                android:textSize="22sp"
+                app:fontname="@string/font_UBERMedium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ub__marker_destination_walk"
+                android:visibility="gone" />
+
+            <com.trioangle.goferdriver.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/pickup"
+                android:textColor="@color/textblack"
+                android:textSize="20sp"
+                android:visibility="gone"
+                app:fontname="@string/font_UBERMedium" />
+
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="waiting.."
+            android:id="@+id/distance"
+            android:background="@color/white"
+            android:textSize="20dp"
+            android:textColor="@color/black_alpha_20"
+            android:gravity="center_horizontal"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <!--            android:background="@drawable/arrivedboarder"-->
+
+
+            <com.trioangle.goferdriver.proswipebutton.ProSwipeButton
+                android:id="@+id/tripastatusbutton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/ub__transparent"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:btn_text="@string/confirm_arrived" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_start_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profileimg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_message"/>
+
+    <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitXY" />
+
+    <com.trioangle.goferdriver.custompalette.FontTextView
+        android:id="@+id/latlng"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxLines="10"
+        android:paddingStart="5dp"
+        android:scrollbars="vertical"
+        android:text="LatLng"
+        android:textColor="@color/textblack"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:fontname="@string/font_Medium" />
+
+    <com.trioangle.goferdriver.custompalette.FontTextView
+        android:id="@+id/latlng1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latlng"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="10"
+        android:paddingStart="5dp"
+        android:scrollbars="vertical"
+        android:text="LatLng Update"
+        android:textColor="@color/textblack"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:fontname="@string/font_UBERMedium" />
+</RelativeLayout>

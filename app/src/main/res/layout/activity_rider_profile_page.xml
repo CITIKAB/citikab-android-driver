@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rider_profile_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.goferdriver.home.RiderProfilePage">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/driverlicence_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            android:tint="@color/white" />
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/driverlicence_back"
+            android:text="@string/rider_profile"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERBook" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/back"
+        android:background="@color/app_background">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/pointerlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="20dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/pointicongreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="13dp"
+                        android:src="@drawable/ub__marker_pickup_walk"
+                        android:tint="#35AF1A" />
+
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/pointicongreen2"
+                        android:layout_marginStart="18dp"
+                        android:background="@drawable/dotedline" />
+
+                    <ImageView
+                        android:id="@+id/pointicongreen2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="14dp"
+                        android:paddingBottom="35dp"
+                        android:src="@drawable/ub__marker_pickup_walk"
+                        android:tint="#FF0000" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/whitelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/pointerlayout"
+                    android:background="@color/white">
+
+
+                    <RelativeLayout
+                        android:id="@+id/ubergolayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutfirsttext"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/d_buttomboarder"
+                        android:paddingBottom="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="20dp">
+
+
+                        <TextView
+                            android:id="@+id/cartype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="48dp"
+                            android:text=""
+                            android:layout_centerVertical="true"
+                            android:textColor="#9D9DA3"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/car"
+                            android:id="@+id/imgv_rider_accepted_cartypeImage"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:text="1.5X"
+                            android:textColor="#9D9DA3"
+                            android:textSize="20dp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/addresslayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ubergolayout"
+                        android:background="@drawable/d_buttomboarder">
+
+                        <TextView
+                            android:id="@+id/adresstext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/pointicon"
+                            android:paddingBottom="20dp"
+                            android:paddingEnd="20dp"
+                            android:paddingTop="20dp"
+                            android:textColor="#6C6C77"
+                            android:textSize="20dp"
+
+                            />
+
+                        <com.trioangle.goferdriver.custompalette.FontTextView
+                            android:id="@+id/pointicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginStart="20dp"
+                            android:text="H"
+                            android:textSize="20dp"
+                            app:fontname="@string/font_UberClone" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addresslayout"
+                        android:background="#6B6B76"
+                        android:divider="@drawable/divider"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/contact_lay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/topandbottonboarder"
+                            android:gravity="center">
+
+                            <com.trioangle.goferdriver.custompalette.FontTextView
+                                android:id="@+id/contacticon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:text="p"
+                                android:textColor="@color/app_continue"
+                                android:textSize="18dp"
+                                app:fontname="@string/font_UberClone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/contacticon"
+                                android:text="@string/contact_C"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/app_continue"
+                                />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/cancel_lay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/topandbottonboarder"
+                            android:gravity="center">
+
+                            <com.trioangle.goferdriver.custompalette.FontTextView
+                                android:id="@+id/cancelicon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="20dp"
+                                android:text="g"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/app_continue"
+                                android:textSize="18dp"
+                                app:fontname="@string/font_UberClone" />
+
+                            <TextView
+                                android:id="@+id/cancel_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/cancelicon"
+                                android:text="@string/cancel"
+                                android:textColor="#6B6B76"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutfirsttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/d_buttomboarder"
+                        android:paddingBottom="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="20dp">
+
+                        <TextView
+                            android:id="@+id/nametext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/pickuptext"
+                            android:layout_toStartOf="@+id/rating_layout"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="asjsdgaklgadjs gas"
+                            android:textColor="#060606"
+                            android:textSize="20dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rating_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pickuptext"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_toStartOf="@+id/profileimage"
+                            android:background="@drawable/ratingboarder"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/ratingtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="2dp"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+                            <com.trioangle.goferdriver.custompalette.FontTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/ratingtext"
+                                android:paddingEnd="2dp"
+                                android:paddingStart="2dp"
+                                android:paddingTop="4dp"
+                                android:text="i"
+                                android:textColor="@color/white"
+                                android:textSize="11dp"
+                                app:fontname="@string/font_UberClone" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/profileimage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:textSize="50dp" />
+
+                        <TextView
+                            android:id="@+id/pickuptext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/pick_up"
+                            android:textColor="#35AF1A"
+                            android:textSize="20dp" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/droplayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/whitelayout"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@+id/pointerlayout"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/dropoff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="20dp"
+                        android:text="@string/dropoff"
+                        android:textColor="#D13417" />
+
+                    <TextView
+                        android:id="@+id/droplocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dropoff"
+                        android:layout_toStartOf="@+id/imgicon"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#060606" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imgicon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/user"
+                        android:paddingEnd="50dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/droplayout"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/stoprequestboarder"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingStart="20dp"
+                        android:text="Stop new request"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/handicon" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

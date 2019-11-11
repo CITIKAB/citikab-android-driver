@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY appname_driver "Gofer Driver"><!ENTITY appname "Gofer">]>
+
+<resources>
+    <string name="app_name">&appname_driver;</string>
+
+    <string name="layout_direction">1</string>
+
+    <string name="descreption">"بالموافقة ، أوافق على ذلك &appname; أو يمكن لممثليها الاتصال بي عن طريق البريد الإلكتروني أو الرسائل النصية القصيرة أو الرسائل القصيرة (بما في ذلك عن طريق نظام الاتصال الهاتفي التلقائي) على عنوان البريد الإلكتروني أو رقم أقوم بتقديمه ، بما في ذلك لأغراض التسويق. لقد قرأت وفهمت بيان خصوصية السائق المعني. قد تختلف المبالغ الإحالة ومتطلبات الرحلة الدنيا من مدينة إلى أخرى. &appname;اسم التطبيق قد يغير أي مبلغ من الحوافز أو معايير جليلة في نسله الوحيد."</string>
+    <string name="mobilenumber">رقم الهاتف المحمول</string>
+    <string name="language">لغة</string>
+    <string name="selectlanguage">اختار اللغة</string>
+    <string name="loading">جار التحميل</string>
+
+    <string name="add_bank_details">إضافة تفاصيل البنك</string>
+    <string name="noratings">لا يوجد تقييم وتعليقات</string>
+    <string name="ratingsncomment">التقييمات والتعليقات</string>
+    <string name="vehicleinformation">معلومات السيارة</string>
+    <string name="pleaseentermobile">الرجاء إدخال رقم الجوال</string>
+    <string name="turnoninternet">بدوره على الإنترنت</string>
+    <string name="ok">حسنا</string>
+    <string name="yourtripcancelledbydriver">رحلتك إلغاؤها من قبل سائق ...</string>
+    <string name="driverarrrive">سائق وصول الآن ...</string>
+    <string name="waiting">في انتظار موافقة المشرف ..</string>
+    <string name="acceptingpickup">قبول صغيرة ...</string>
+    <string name="rateyourrider">تقييم المتسابق الخاص بك</string>
+    <string name="writecomment">إرسال تعليقاتكم ...</string>
+    <string name="paymentdetails">بيانات الدفع</string>
+    <string name="view">رأي</string>
+    <string name="pressbackagain">اضغط مرة أخرى للخروج</string>
+    <string name="paymentcompleted">الانتهاء من الدفع بنجاح ...</string>
+    <string name="addphoto">إضافة صورة</string>
+    <string name="Takephoto">تصوير</string>
+    <string name="choosefromlib">اختر من المكتبة</string>
+    <string name="save">حفظ</string>
+    <string name="yourtripcanceledrider">رحلتك إلغاؤها من قبل رايدر ...</string>
+    <string name="other_reasons">أسباب أخرى</string>
+    <string name="signin">"تسجيل الدخول"</string>
+    <string name="usernameemail">"اسم المستخدم أو البريد الالكتروني"</string>
+    <string name="password">"كلمه السر"</string>
+    <string name="forgotpassword">"هل نسيت كلمة المرور؟"</string>
+
+    <string name="error_msg_vehiclename">"الرجاء إدخال اسم سيارتك"</string>
+    <string name="error_msg_vehiclenumber">"الرجاء إدخال رقم سيارتك"</string>
+    <string name="error_msg_vehicletype">"الرجاء اختيار نوع سيارتك"</string>
+    <string name="error_msg_firstname">"يرجى ادخال الاسم الاول"</string>
+
+    <string name="error_msg_mobilenumber">"رقم الجوال غير صالح"</string>
+
+    <string name="error_msg_lastname">"الرجاء إدخال اسمك الأخير"</string>
+    <string name="error_msg_email">"رجاء قم بإدخال بريد الكتروني صحيح"</string>
+    <string name="error_msg_phone">"الرجاء إدخال رقم جوال صحيح"</string>
+    <string name="error_msg_password">"الرجاء إدخال الحد الأدنى من 6 أحرف"</string>
+    <string name="error_msg_address">"يرجى إدخال عنوان صالح"</string>
+    <string name="error_msg_city">"الرجاء إدخال مدينة صالحة"</string>
+    <string name="error_msg_state">"الرجاء إدخال حالة صالحة"</string>
+    <string name="error_msg_post">"الرجاء إدخال الرمز البريدي صالح"</string>
+    <string name="error_msg_rating">"يرجى إعطاء تصويتك"</string>
+
+    <string name="getmobilenumber">أدخل رقم هاتفك المحمول</string>
+    <string name="first">"الاسم الاول"</string>
+    <string name="last">"الكنية"</string>
+    <string name="email">"البريد الإلكتروني"</string>
+    <string name="paypalemail">"بريد باي بال"</string>
+    <string name="address1">"العنوان 1"</string>
+    <string name="address2">"العنوان 2"</string>
+    <string name="city">"مدينة"</string>
+    <string name="state">"حالة"</string>
+    <string name="postalcode">"الرمز البريدي"</string>
+
+
+    <string name="havean_account">"هل لديك حساب؟"</string>
+    <string name="login">تسجيل الدخول</string>
+
+    <string name="resetpasswords">اعد ضبط كلمه السر</string>
+
+    <string name="riderfeedbacktitle">"ردود الفعل متسابق"</string>
+
+
+    <string name="signout_msg">"هل أنت متأكد أنك تريد الخروج؟"</string>
+    <string name="cancel_s">"إلغاء"</string>
+
+    <string name="register">"تسجيل"</string>
+    <string name="vehicle">"تفاصيل السيارة"</string>
+    <string name="vehicle_name">"اسم المركبات / على سبيل المثال: TOYOTO كامري وهوندا أكورد ..."</string>
+    <string name="vehicle_number">"عدد المركبات / على سبيل المثال: WNF 382"</string>
+    <string name="vehicle_type">"اختيار نوع سيارتك"</string>
+    <string name="looking">"أبحث عن التطبيق متسابق"</string>
+    <string name="signupwithrider">"الاشتراك مع حساب المتسابق"</string>
+    <string name="or">"أو"</string>
+    <string name="trip_star_5">"تقييمك الحالي"</string>
+    <string name="current_rating">"رحلات مدى الحياة"</string>
+    <string name="trip_cancel">"5 نجوم"</string>
+    <string name="request_accepted">"التعليقات ذات الصلة"</string>
+    <string name="enter4digit">أدخل رمز 4 أرقام أرسلت لك في</string>
+    <string name="resend">أعد إرسال الرمز</string>
+    <string name="otp_mismatch">"عدم تطابق كود مكتب المدعي العام."</string>
+    <string name="otp_emty">"الرجاء إدخال مكتب المدعي العام"</string>
+
+    <string name="riderfeedback">"ردود الفعل متسابق"</string>
+    <string name="checkfeedback">"تحقق من ردود الفعل من الدراجين ومعرفة كيفية تحسين"</string>
+    <string name="drivingstyle">"القيادة لوحة القيادة على غرار"</string>
+    <string name="seeyourdriving">"رؤية الشخصي أسلوب القيادة الخاص بك بعد الانتهاء المزيد من الرحلات"</string>
+    <string name="cancel_your_trip">"إلغاء رحلتك"</string>
+    <string name="rider_profile">"لمحة متسابق"</string>
+    <string name="waiting_for_payment">"في انتظار دفع"</string>
+    <string name="payment_done">"دفع القيام به"</string>
+    <string name="paid">"دفع"</string>
+
+    <string name="documents">"مستندات"</string>
+    <string name="doc">"يرجى تحميل المستندات الخاصة بك"</string>
+    <string name="personaldoc">"يرجى تحميل الوثائق الشخصية الخاصة بك."</string>
+    <string name="vehicledoc_msg">"لدفع &appname;، ويجب أن تكون سيارتك متوسطة الحجم أو سيدان كاملة الحجم تتسع بشكل مريح 4-8 الركاب".</string>
+    <string name="driverlicense_back">"رخصة للسياقة (الظهر)"</string>
+    <string name="driverlicense_front">"رخصة القيادة - (الجبهة)"</string>
+    <string name="motor_insurance">"شهادة التأمين على السيارات"</string>
+    <string name="registeration">"شهادة تسجيل"</string>
+    <string name="contract_carriage">"تصريح نقل العقد"</string>
+    <string name="verify">"التحقق"</string>
+    <string name="takephoto">"خذ صورة لبك"</string>
+    <string name="takephoto_msg">"من فضلك تأكد من أننا يمكن بسهولة قراءة كل التفاصيل."</string>
+    <string name="taptoadd">"انقر لإضافة"</string>
+    <string name="taptochange">"انقر لتغيير"</string>
+    <string name="home">"الصفحة الرئيسية"</string>
+    <!--<string name="home">"منزل"</string>-->
+    <string name="earnings">"أرباح"</string>
+    <string name="rating">"تقييمات"</string>
+    <string name="account">"الحساب"</string>
+    <string name="offline">"غير متصل على الانترنت"</string>
+    <string name="checkstatus">"تحقق من حالة"</string>
+    <string name="online">"عبر الانترنت"</string>
+    <string name="trip_id">"رحلة الهوية"</string>
+    <string name="enroute">"في المسار"</string>
+    <string name="navigate">"التنقل"</string>
+    <string name="pickup">"امسك"</string>
+    <string name="pick_up">"امسك"</string>
+    <string name="dropoff">"إنزال"</string>
+    <string name="contact_C">"اتصل"</string>
+    <string name="call">"مكالمة"</string>
+    <string name="callsonly">"يدعو فقط"</string>
+    <string name="cancel">"إلغاء"</string>
+    <string name="minute">"اللحظة"</string>
+    <string name="minutes">"الدقائق"</string>
+    <string name="help">"مساعدة"</string>
+    <string name="edit">"تصحيح"</string>
+    <string name="document_s">"مستندات"</string>
+    <string name="about">"حول"</string>
+    <string name="signout">"خروج"</string>
+    <string name="notrip">"لا يوجد لديك رحلة"</string>
+
+    <string name="currency">"₹"</string>
+    <string name="tripsdetails">"التفاصيل رحلة"</string>
+    <string name="triphistory">"التاريخ رحلة"</string>
+    <string name="trip_payment">"رحلات اند المدفوعات"</string>
+    <string name="pasttrip">"رحلات الماضية"</string>
+    <string name="todaytrip">"رحلة اليوم"</string>
+
+    <string name="tripearnings">"أرباح رحلة"</string>
+    <string name="fare">"الاجرة الاساسية"</string>
+    <string name="uberfee">"رسوم دخول"</string>
+    <string name="distancefare">"أجرة بعد"</string>
+    <string name="timefare">"أجرة الوقت"</string>
+    <string name="estimatedpayout">"دفع تعويضات التام"</string>
+    <string name="totalpayout">"دفع تعويضات التام"</string>
+    <string name="totalamount">"مجموع أجرة الرحلة"</string>
+    <string name="adminamount">"كمية المشرف ل"</string>
+    <string name="oweamount">"ندين تصل"</string>
+    <string name="driverpayout">"دفع تعويضات سائق"</string>
+    <string name="cashcollectable">"النقد تحصيل"</string>
+    <string name="cash_trip">"رحلة النقدية"</string>
+    <string name="cashcollected">"تحصيلها"</string>
+    <string name="waitforrider">"في انتظار تأكيد متسابق"</string>
+
+    <string name="duration">"المدة الزمنية"</string>
+    <string name="distance">"مسافه: بعد"</string>
+    <string name="thisweek">"هذا الاسبوع"</string>
+    <string name="thisweek_empty">"لم تكن مدفوعة هذا الأسبوع"</string>
+    <string name="total_payout">"دفع تعويضات التام"</string>
+    <string name="last_trip">"الرحلة الأخيرة"</string>
+    <string name="pay_statemet">"كشوف المرتبات"</string>
+    <string name="payment">"دفع"</string>
+    <string name="payout">"سيصرف"</string>
+    <string name="addpayout">إضافة باي بال دفع تعويضات</string>
+    <string name="most_recent">"معظم دفع تعويضات الأخير"</string><!--&appname;-->
+    <string name="addpayment_msg">"لإضافة توزيعات جديدة. إنشاء البريد الإلكتروني لحساب &appname_driver; الخاص بك."</string>
+
+    <string name="begin_trip_text">"تبدأ رحلة"</string>
+    <string name="confirm_arrived_text">"تأكيد كنت قد وصلت"</string>
+    <string name="end_trip_text">"رحلة نهاية"</string>
+
+    <string name="begin_trip">"تبدأ رحلة"</string>
+    <string name="Rating">تقييم</string>
+    <string name="completed">منجز</string>
+    <string name="Cancelled">ألغيت</string>
+    <string name="confirm_arrived">"تأكيد كنت قد وصلت"</string>
+    <string name="end_trip">"رحلة نهاية"</string>
+    <string name="scheduled">"المقرر"</string>
+
+    <string name="paystatement">"كشوف المرتبات"</string>
+    <string name="weeklystatement">"البيان الأسبوعي"</string>
+
+    <string name="timeonline">"الوقت على الانترنت"</string>
+    <string name="completedtrips">"رحلات الانتهاء"</string>
+    <string name="dailyearning">"الأرباح اليومية"</string>
+    <string name="bankdeposit">"وديعة بنكية"</string>
+    <string name="totaluberearning">"مجموع أرباح &appname;"</string>
+    <string name="riderfaresearn">"فارس المتسابق كسبت وأبقى".</string>
+
+    <string name="Interneterror">لا يوجد اتصال إنترنت</string>
+    <string name="no_connection">لا يوجد اتصال إنترنت</string>
+    <string name="go_online">اتصل بالانترنت</string>
+
+    <string name="location_not_enabled">الموقع غير ممكن!</string>
+    <string name="location_settings">فتح إعدادات الموقع</string>
+
+    <string name="no_address_found">عذرا، لم يتم العثور على عنوان</string>
+    <string name="no_location_data_provided">لا توجد بيانات موقع المقدمة</string>
+    <string name="service_not_available">عذرا، الخدمة غير متوفرة</string>
+    <string name="invalid_lat_long_used">العرض غير صالح أو العرض المستخدمة</string>
+
+    <string name="profile">"الملف الشخصي"</string>
+    <string name="mobile">"التليفون المحمول"</string>
+
+    <string name="InvalidMobileNumber">رقم الجوال غير صالح</string>
+    <string name="InvalidPassword">الرجاء إدخال الحد الأدنى من 6 أحرف</string>
+    <string name="Passwordmismatch">كلمة المرور عدم تطابق</string>
+    <string name="Enteryourpassword">ادخل رقمك السري</string>
+    <string name="Confirmyourpassword">أكد رقمك السري</string>
+    <string name="currencies">"دقة"</string>
+    <string name="selectcurrency">"اختر العملة"</string>
+
+    <string name="enable_permission">يرجى تمكين الأذونات</string>
+    <string name="active">نشيط...</string>
+
+    <string-array name="cancel_types">
+        <item>"آخر الكسب</item>
+        <item>"رايدر لا تظهر"</item>
+        <item>"طلب رايدر إلغاء"</item>
+        <item>"عنوان خاطئ أظهرت"</item>
+        <item>"تشارك في وقوع حادث"</item>
+        <item>"لا تهمة رايدر"</item>
+        <item>"آخر"</item>
+    </string-array>
+    <string name="emailalreadyexits">لديك بالفعل حساب بهذا البريد الإلكتروني. حاول تسجيل الدخول بدلاً من ذلك.</string>
+    <string name="hide">إخفاء</string>
+    <string name="invalidelogin">تفاصيل تسجيل الدخول غير صالحة</string>
+    <string name="network_failure">الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+    <string name="internal_server_error">"يرجى المحاولة بعد بعض الأحيان. "</string>
+    <string name="camera">الة تصوير</string>
+    <string name="camera_roll">"فلم الة التصوير "</string>
+    <string name="please_enable_permissions">يرجى تمكين أذونات التطبيق</string>
+    <string name="next">التالى</string>
+    <string name="img_failed_msg">فشل تحميل الصورة</string>
+    <string name="cancelreason">مطلوب إلغاء الأمر مطلوب</string>
+    <string name="image_uploaded">تم تحميل الصورة بنجاح</string>
+    <string name="rider">راكب</string>
+    <string name="settings">الإعدادات</string>
+    <string name="not_now">ليس الان</string>
+    <string name="message">رسالة</string>
+    <string name="camera_permission_description">لالتقاط الصور ومقاطع الفيديو ، اسمح &appname;؛ للوصول إلى الكاميرا والتخزين</string>
+
+    <string name="storage_permission_description">لتحميل صورة &appname;؛ للوصول إلى التخزين الخاصة بك</string>
+    <string name="location_permission_description">لطلب رحلتك ، اسمح &appname;؛ للوصول إلى موقع جهازك</string>
+    <string name="contacts_permission_description">لإضافة جهات اتصال الطوارئ ، اسمح &appname;؛ للوصول إلى جهات الاتصال الخاصة بك</string>
+    <string name="continues">"استمر "</string>
+    <string name="payout_title">إعداد &appname; بك و. طريقة دفع تعويضات</string>
+    <string name="payout_address">عنوان سيصرف</string>
+    <string name="country_hint">بلد</string>
+    <string name="pin_hint">الرمز البريدي / الرمز البريدي</string>
+    <string name="search">بحث...</string>
+    <string name="addressnot_see">لا أرى عنوانك؟ استخدام النموذج عنوان بدلا من ذلك.</string>
+    <string name="street_hint">الشارع / اسم الطريق</string>
+    <string name="apt_hint">شقة / جناح / لوازم البناء</string>
+    <string name="city_hint">مدينة / بلدة / منطقة</string>
+    <string name="state_hint">الدولة / الإقليم / مقاطعة</string>
+    <string name="currency1">دقة</string>
+    <string name="routing_number">رقم التوصيل</string>
+    <string name="clearing_code">مسح الكود</string>
+    <string name="bank_name">اسم البنك</string>
+    <string name="branch_name">اسم الفرع</string>
+    <string name="bank_code">رمز بنكي</string>
+    <string name="branch_code">رمز الفرع</string>
+    <string name="transit_number">رقم العبور</string>
+    <string name="institute_number">عدد معهد</string>
+    <string name="sort_code">الكود البنكى</string>
+    <string name="account_number">رقم حساب</string>
+    <string name="account_owner_name">اسم المالك حساب</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="iban_number">عدد IBAN</string>
+    <string name="account_holder_name">اسم صاحب الحساب</string>
+    <string name="gender">جنس</string>
+    <string name="address_1">العنوان 1</string>
+    <string name="address_2">العنوان 2</string>
+    <string name="address_kanji2">العنوان 2</string>
+    <string name="address_kanji1">العنوان 1</string>
+    <string name="state_province">الدولة / مقاطعة</string>
+    <string name="postal_code">الرمز البريدي</string>
+    <string name="legal_document">وثيقة قانونية</string>
+    <string name="stripe_details">تفاصيل الشريط</string>
+    <string name="submit">خضع</string>
+    <string name="state_province_kanji">الدولة / مقاطعة</string>
+    <string name="postal_code_kanji">الرمز البريدي</string>
+    <string name="address_kana2">العنوان 2</string>
+    <string name="postal_code_kana">الرمز البريدي</string>
+    <string name="address_kana">معالجة قانا</string>
+    <string name="paypal_email">باي بال ID البريد الإلكتروني</string>
+    <string name="address_kanji">عنوان كانجي</string>
+    <string name="showpassword">عرض كلمة المرور</string>
+    <string name="delete">حذف</string>
+    <string name="makedefault">جعل الافتراضي</string>
+    <string name="defaults">افتراضي</string>
+    <string name="selectcountry">حدد الدولة</string>
+    <string name="select">المحدد</string>
+    <string name="choose_currency">يرجى اختيار العملة</string>
+    <string name="iban_numbers">يرجى إدخال رقم IBAN</string>
+    <string name="account_holder">يرجى إدخال اسم صاحب الحساب</string>
+    <string name="enter_address_1">يرجى إدخال عنوان 1</string>
+    <string name="enable_permissions_to_proceed_further">تمكين إذن على المضي قدما</string>
+    <string name="takephoto_title">التقاط صورة</string>
+    <string name="add_stripe_payout">إضافة الشريط سيصرف</string>
+    <string name="please_choose_a_currency">يرجى اختيار العملة</string>
+    <string name="please_enter_account_number">يرجى إدخال رقم الحساب</string>
+    <string name="please_enter_bank_name">يرجى إدخال اسم البنك</string>
+    <string name="please_enter_branch_name">يرجى إدخال اسم الفرع</string>
+    <string name="please_enter_bank_code">الرجاء إدخال رمز البنك</string>
+    <string name="please_enter_branch_code">الرجاء إدخال رمز الفرع</string>
+    <string name="please_enter_account_holder_name">يرجى إدخال اسم صاحب الحساب</string>
+    <string name="please_enter_address1">يرجى إدخال عنوان 1</string>
+    <string name="please_enter_city">يرجى إدخال المدينة</string>
+    <string name="please_enter_state">الرجاء إدخال الدولة</string>
+    <string name="please_enter_postal_code">\"الرجاء إدخال الرمز البريدي\"</string>
+    <string name="please_upload_legal_document">يرجى تحميل وثيقة قانونية</string>
+    <string name="external_storage_permission_necessary">إذن التخزين الخارجي ضروري</string>
+    <string name="please_enter_sort_code">الرجاء إدخال رمز نوع</string>
+    <string name="please_enter_SSN">يرجى إدخال SSN</string>
+    <string name="please_enter_routing_number">يرجى إدخال توجيه عدد</string>
+    <string name="please_enter_clearing_code">يرجى إدخال كود المقاصة</string>
+    <string name="please_enter_account_owner_name">يرجى إدخال حساب اسم المالك</string>
+    <string name="please_enter_phone_number">يرجى إدخال رقم الهاتف</string>
+    <string name="please_choose_gender">الرجاء اختيار نوع الجنس</string>
+    <string name="please_enter_address_1_of_kana">يرجى إدخال عنوان 1 من قانا</string>
+    <string name="please_enter_address_2_of_kana">يرجى إدخال عنوان 2 من قانا</string>
+    <string name="please_enter_city_of_kana">يرجى إدخال مدينة قانا</string>
+    <string name="please_enter_state_of_kana">يرجى إدخال حالة قانا</string>
+    <string name="please_enter_postal_code_of_kana">الرجاء إدخال الرمز البريدي لقانا</string>
+    <string name="please_enter_address_1_of_kanji">يرجى إدخال عنوان 1 من كانجي</string>
+    <string name="please_enter_address_2_of_kanji">يرجى إدخال عنوان 2 من كانجي</string>
+    <string name="please_enter_city_of_kanji">يرجى إدخال مدينة كانجي</string>
+    <string name="please_enter_state_of_kanji">يرجى إدخال حالة كانجي</string>
+    <string name="please_enter_postal_code_of_kanji">الرجاء إدخال الرمز البريدي من كانجي</string>
+    <string name="please_choose_country">الرجاء اختيار البلد</string>
+    <string name="please_enter_transit_number">يرجى إدخال رقم العابر</string>
+    <string name="please_enter_institution_number">يرجى إدخال رقم المؤسسة</string>
+    <string name="please_enter_BSB">يرجى إدخال BSB</string>
+    <string name="please_complete_your_current_trip">يرجى إكمال الرحلة الحالية</string>
+    <string name="driver_in_offline_alert_message">غير قادر على معالجة بينما السائق في متواجد حاليا</string>
+    <string name="rate_your_ride">معدل رحلتك</string>
+    <string name="skip">تخطى</string>
+    <string name="no_ratings_display">ليس لديك تقييم للعرض</string>
+
+    <string name="bank_location">مكان البنك</string>
+    <string name="bic_swift_code">رمز BIC / SWIFT</string>
+    <string name="name_of_bank">اسم البنك</string>
+    <string name="required">مطلوب</string>
+    <string name="bank_details_success_message">تمت إضافة تفاصيل البنك بنجاح</string>
+
+    <string name="manually_booked">حجز يدويا لركوب</string>
+    <string name="manual_booking_reminder">دليل الحجز تذكير</string>
+    <string name="manual_booking_cancelled">الحجز اليدوي ألغيت</string>
+    <string name="send_a_message">ارسل رسالة</string>
+    <string name="google_map_not_found_in_device">خريطة جوجل لا توجد في الجهاز</string>
+    <string name="waze_google_map_not_found_in_device">ويز خريطة لا توجد في الأجهزة</string>
+    <string name="choose_map">اختيار خريطة</string>
+    <string name="google_map">خرائط جوجل</string>
+    <string name="waze_map">خريطة ويز</string>
+    <string name="location_not_enabled_please_enable_location">الموقع لا سكريبت، يرجى تمكين الموقع على المضي قدما</string>
+    <string name="you_have_been_manualy_booked">لقد تم حجزها manualy</string>
+    <string name="kanji_city">مدينة</string>
+    <string name="city_kana">مدينة</string>
+
+    <string name="pending_trips">في انتظار الرحلات</string>
+    <string name="completed_trips">رحلات مكتملة</string>
+    <string name="error_address">يرجى تقديم عنوان</string>
+    <string name="error_city">يرجى تقديم مدينة.</string>
+    <string name="error_zip_code">يرجى تقديم الرمز البريدي.</string>
+    <string name="error_country">يرجى اختيار بلد للدفع.</string>
+    <string name="no_vehicle_assigned">لم يتم تعيين مركبة</string>
+    <string name="trips">رحلة</string>
+    <string name="total_trip_amount">إجمالي مبلغ الرحلة</string>
+    <string name="doc_upload_error">يرجى تحميل جميع الوثائق</string>
+    <string name="bank_details">تفاصيل البنك</string>
+
+
+</resources>

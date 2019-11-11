@@ -1,0 +1,98 @@
+<resources xmlns:android="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_primary</item>
+        <item name="colorPrimaryDark">@color/app_background</item>
+        <item name="colorAccent">@color/app_continue</item>
+    </style>
+
+
+     <style name="AppLoginTheme" parent="Theme.AccountKit">
+         <item name="android:windowNoTitle">true</item>
+         <item name="com_accountkit_secondary_color">#FFFFFF</item>
+         <item name="com_accountkit_input_background_color">@color/input_bacground_color</item>
+         <item name="colorPrimary">@color/app_primary</item>
+         <item name="colorPrimaryDark">@color/colorblack</item>
+         <item name="com_accountkit_primary_color">@color/ub__black</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="share_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:background">#fff</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+
+    <!-- <style name="SwitchCompatTheme" >
+         <item name="thumbTint">@color/switchcolor</item>
+         <item name="trackTint">@color/trackcolor</item>
+     </style>-->
+
+    <style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+
+    <style name="SwitchCompatStyle">
+        <item name="android:thumb">@drawable/n2_sheet_switch_thumb_checked</item>
+        <item name="trackTint">@color/trackcolor</item>
+    </style>
+
+
+    <style name="foodRatingBar" parent="Theme.AppCompat">
+        <item name="android:progressDrawable">@drawable/customratingtwo</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+
+    </style>
+
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+    </style>
+
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+</resources>

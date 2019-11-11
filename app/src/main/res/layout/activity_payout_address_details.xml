@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payoutaddress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    >
+
+    <RelativeLayout
+        android:id="@+id/payoutaddress_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_background"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/payoutaddress_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_back"/>
+
+
+        <com.trioangle.goferdriver.custompalette.FontTextView
+            android:id="@+id/payoutaddress"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/actionbar_text_size"
+            android:textColor="@color/actionbar_text_color"
+            android:text="@string/payout"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/payoutaddress_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/payoutaddress_title">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal">
+
+    <com.trioangle.goferdriver.custompalette.FontTextView
+        android:id="@+id/payoutaddress_msg"
+        android:layout_width="wrap_content"
+        android:layout_weight=".2"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/midb"
+        android:textColor="@color/text_light_shadow"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/payout_address"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:orientation="vertical"
+            android:background="@color/text_color"
+            android:layout_below="@+id/payoutaddress_msg"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
+
+    <LinearLayout
+        android:id="@+id/address_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:background="@drawable/d_bottom_shadow">
+
+        <EditText
+            android:id="@+id/payoutaddress_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:inputType="textPostalAddress"
+            android:maxLines="1"
+            android:hint="@string/street_hint"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="20dp"
+            android:background="@drawable/d_bottom"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/payoutaddress_apt"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPostalAddress"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:hint="@string/apt_hint"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/d_bottom"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:id="@+id/payoutaddress_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:maxLines="1"
+            android:inputType="textPostalAddress"
+            android:hint="@string/city_hint"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/d_bottom"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/payoutaddress_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:maxLines="1"
+            android:inputType="textPostalAddress"
+            android:hint="@string/state_hint"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/d_bottom"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/payoutaddress_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:maxLines="1"
+            android:inputType="textPostalAddress"
+            android:hint="@string/pin_hint"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/d_bottom"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:id="@+id/payoutaddress_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:maxLines="1"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/white"
+            android:hint="@string/country_hint"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textColorHint="@color/calendar_text_unselectable"
+            android:textColor="@color/text_shadow"
+            android:layout_centerVertical="true" />
+
+    </LinearLayout>
+        </RelativeLayout>
+
+    <com.trioangle.goferdriver.custompalette.FontButton
+      android:id="@+id/payout_next"
+      android:layout_weight=".2"
+      android:layout_width="match_parent"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="20dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="20dp"
+      android:textSize="@dimen/big"
+      android:layout_height="wrap_content"
+      android:background="@drawable/d_background_black"
+      android:text="@string/next"
+      android:textStyle="bold"
+      android:textAllCaps="false"
+      android:textColor="@color/white"/>
+    </LinearLayout>
+    </ScrollView>
+
+    </RelativeLayout>
